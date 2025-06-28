@@ -1,0 +1,44 @@
+import { Button } from "@/components/ui/button"; import { Card, CardContent } from "@/components/ui/card"; import { Sparkles } from "lucide-react"; import { motion } from "framer-motion";
+
+export default function HomePage() { return ( <div className="min-h-screen bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white p-4"> <header className="text-center py-12"> <motion.h1 className="text-4xl md:text-6xl font-bold" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} > <Sparkles className="inline-block text-yellow-400 mr-2" /> Chia Sẻ Kiến Thức Công Nghệ </motion.h1> <motion.p className="mt-4 text-lg text-gray-300" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.8 }} > Dành cho người mới bắt đầu - cùng nhau khám phá, học hỏi và làm chủ công nghệ! </motion.p> </header>
+
+<main className="max-w-4xl mx-auto grid gap-6 md:grid-cols-3">
+    {["Lập trình web", "Điện tử cơ bản", "AI & Tự động hóa"].map((title, index) => (
+      <motion.div
+        key={index}
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: index * 0.2 }}
+        viewport={{ once: true }}
+      >
+        <Card className="bg-white text-black shadow-xl rounded-2xl">
+          <CardContent className="p-6">
+            <h3 className="text-xl font-semibold mb-2">{title}</h3>
+            <p className="text-sm text-gray-600">
+              Những bài học đơn giản, dễ hiểu và thực tế để bạn bắt đầu hành trình công nghệ.
+            </p>
+          </CardContent>
+        </Card>
+      </motion.div>
+    ))}
+  </main>
+
+  <div className="text-center mt-12">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 1 }}
+    >
+      <Button className="bg-yellow-400 text-black text-lg px-6 py-3 rounded-full shadow hover:bg-yellow-300">
+        Bắt đầu khám phá ngay
+      </Button>
+    </motion.div>
+  </div>
+
+  <footer className="mt-20 text-center text-sm text-gray-400">
+    © 2025 Chia sẻ công nghệ | Made with 💡 & đam mê
+  </footer>
+</div>
+
+); }
+
