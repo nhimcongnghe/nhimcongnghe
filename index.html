@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trang web của bạn</title>
+  <title>Chia Sẻ Kiến Thức Công Nghệ</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -13,6 +14,7 @@
 
     body {
       font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
     }
 
     /* Thanh điều hướng */
@@ -64,8 +66,9 @@
     }
   </style>
 </head>
-<body>
+<body class="text-white min-h-screen flex flex-col items-center px-4">
 
+  <!-- Navbar -->
   <div class="navbar">
     <div class="logo">🦔 Nhím Công Nghệ</div>
     <ul>
@@ -75,64 +78,61 @@
       <li><a href="#lienhe">Liên hệ</a></li>
     </ul>
   </div>
-</body>
-</html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chia Sẻ Kiến Thức Công Nghệ</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    body {
-      background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
-    }
-  </style>
-</head>
-<body class="text-white min-h-screen flex flex-col items-center px-4">
-  <header class="text-center py-12">
-    <h1 class="text-4xl md:text-6xl font-bold">
-      ✨ Chia Sẻ Kiến Thức Công Nghệ
-    </h1>
-    <p class="mt-4 text-lg text-gray-300">
-      Dành cho người mới bắt đầu - cùng nhau khám phá, học hỏi và làm chủ công nghệ!
-    </p>
-  </header>  <main class="max-w-4xl w-full grid gap-6 md:grid-cols-3">
-    <div class="bg-white text-black rounded-2xl shadow-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Lập trình web</h3>
-      <p class="text-sm text-gray-600">Những bài học đơn giản, dễ hiểu và thực tế để bạn bắt đầu hành trình công nghệ.</p>
+
+  <!-- Nội dung chính -->
+  <div class="content w-full max-w-4xl">
+    <header class="text-center py-12">
+      <h1 class="text-4xl md:text-6xl font-bold">
+        ✨ Chia Sẻ Kiến Thức Công Nghệ
+      </h1>
+      <p class="mt-4 text-lg text-gray-300">
+        Dành cho người mới bắt đầu - cùng nhau khám phá, học hỏi và làm chủ công nghệ!
+      </p>
+    </header>
+
+    <main class="grid gap-6 md:grid-cols-3">
+      <div class="bg-white text-black rounded-2xl shadow-xl p-6">
+        <h3 class="text-xl font-semibold mb-2">Lập trình web</h3>
+        <p class="text-sm text-gray-600">Những bài học đơn giản, dễ hiểu và thực tế để bạn bắt đầu hành trình công nghệ.</p>
+      </div>
+      <div class="bg-white text-black rounded-2xl shadow-xl p-6">
+        <h3 class="text-xl font-semibold mb-2">Điện tử cơ bản</h3>
+        <p class="text-sm text-gray-600">Tìm hiểu về mạch điện, linh kiện và kỹ năng thực hành cơ bản.</p>
+      </div>
+      <div class="bg-white text-black rounded-2xl shadow-xl p-6">
+        <h3 class="text-xl font-semibold mb-2">AI & Tự động hóa</h3>
+        <p class="text-sm text-gray-600">Khám phá sức mạnh của trí tuệ nhân tạo và cách áp dụng vào cuộc sống.</p>
+      </div>
+    </main>
+
+    <div class="text-center mt-12">
+      <a href="#" class="bg-yellow-400 text-black text-lg px-6 py-3 rounded-full shadow hover:bg-yellow-300">
+        Bắt đầu khám phá ngay
+      </a>
     </div>
-    <div class="bg-white text-black rounded-2xl shadow-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">Điện tử cơ bản</h3>
-      <p class="text-sm text-gray-600">Tìm hiểu về mạch điện, linh kiện và kỹ năng thực hành cơ bản.</p>
-    </div>
-    <div class="bg-white text-black rounded-2xl shadow-xl p-6">
-      <h3 class="text-xl font-semibold mb-2">AI & Tự động hóa</h3>
-      <p class="text-sm text-gray-600">Khám phá sức mạnh của trí tuệ nhân tạo và cách áp dụng vào cuộc sống.</p>
-    </div>
-  </main>  <div class="text-center mt-12">
-    <a href="#" class="bg-yellow-400 text-black text-lg px-6 py-3 rounded-full shadow hover:bg-yellow-300">
-      Bắt đầu khám phá ngay
-    </a>
-  </div>  <footer class="mt-20 text-center text-sm text-gray-400">
-    © 2025 Chia sẻ công nghệ | Made with 💡 & đam mê
-  <div class="content">
-    <section id="trangchu">
-      <h1>Chào mừng bạn đến với Trang chủ</h1>
+
+    <!-- Các mục tương ứng với menu -->
+    <section id="trangchu" class="mt-20">
+      <h2 class="text-2xl font-bold mb-2">Trang chủ</h2>
       <p>Đây là nội dung phần Trang chủ...</p>
     </section>
-    <section id="gioithieu">
-      <h2>Giới thiệu</h2>
+    <section id="gioithieu" class="mt-12">
+      <h2 class="text-2xl font-bold mb-2">Giới thiệu</h2>
       <p>Thông tin giới thiệu về bạn hoặc dự án...</p>
     </section>
-    <section id="dichvu">
-      <h2>Dịch vụ</h2>
+    <section id="dichvu" class="mt-12">
+      <h2 class="text-2xl font-bold mb-2">Dịch vụ</h2>
       <p>Chi tiết dịch vụ cung cấp...</p>
     </section>
-    <section id="lienhe">
-      <h2>Liên hệ</h2>
+    <section id="lienhe" class="mt-12">
+      <h2 class="text-2xl font-bold mb-2">Liên hệ</h2>
       <p>Số điện thoại, Zalo hoặc email liên hệ...</p>
     </section>
   </div>
+
+  <footer class="mt-20 text-center text-sm text-gray-400">
+    © 2025 Chia sẻ công nghệ | Made with 💡 & đam mê
   </footer>
+
 </body>
 </html>
