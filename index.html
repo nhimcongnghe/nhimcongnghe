@@ -1,4 +1,102 @@
-<!DOCTYPE html><html lang="vi">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang web của bạn</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Thanh điều hướng */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1f1f1f;
+      border-bottom: 2px solid #00ccff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #00ccff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 25px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #00ccff;
+      border-bottom: 2px solid #00ccff;
+      padding-bottom: 2px;
+    }
+
+    /* Đệm cho phần nội dung dưới navbar */
+    .content {
+      padding-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">🌟 Tên Trang Web</div>
+    <ul>
+      <li><a href="#trangchu">Trang chủ</a></li>
+      <li><a href="#gioithieu">Giới thiệu</a></li>
+      <li><a href="#dichvu">Dịch vụ</a></li>
+      <li><a href="#lienhe">Liên hệ</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <section id="trangchu">
+      <h1>Chào mừng bạn đến với Trang chủ</h1>
+      <p>Đây là nội dung phần Trang chủ...</p>
+    </section>
+    <section id="gioithieu">
+      <h2>Giới thiệu</h2>
+      <p>Thông tin giới thiệu về bạn hoặc dự án...</p>
+    </section>
+    <section id="dichvu">
+      <h2>Dịch vụ</h2>
+      <p>Chi tiết dịch vụ cung cấp...</p>
+    </section>
+    <section id="lienhe">
+      <h2>Liên hệ</h2>
+      <p>Số điện thoại, Zalo hoặc email liên hệ...</p>
+    </section>
+  </div>
+
+</body>
+</html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
